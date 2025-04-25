@@ -1,0 +1,493 @@
+body{
+    z-index:-1px;
+}
+.navbar-custom{
+    background-color:rgb(197, 194, 194);
+    box-shadow: 3px 3px 10px rgb(57, 57, 57);
+    position: sticky;
+    top: 0%;
+    z-index: 1500;
+
+}
+.navbar-brand img {
+    height: 60px;
+  }
+  .nav-link {
+    font-weight: bold;
+    color: black;
+  }
+  .nav-link:hover {
+    color:aliceblue;
+  }
+  .navbar-nav .nav-item{
+      margin: 0 10px;
+  }
+  .promo-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .promo-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  .promo-text p {
+    font-size: 1.1rem;
+    margin-top: 15px;
+    color: #555;
+  }
+  .promo-text a {
+    display: inline-block;
+    margin-top: 20px;
+    font-weight: 600;
+    color: #000;
+    text-decoration:none;
+  }
+  .badge {
+    position: absolute;
+    top: -12px;
+    right:-2px; 
+    color: white;
+    border-radius: 50px;
+    z-index:3;
+  }
+  .badge i:hover{
+    color:#000;
+    background-color: rgb(244, 109, 109);
+  }
+  /* cards styles */
+  .cards{
+    display:flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    gap:40px;
+    flex-wrap:wrap;
+    margin:20px;
+    padding:20px;
+    text-align: center;
+    align-content: center;
+  }
+  i{
+    height: 50px;
+    width:50px;
+    border-radius: 50%;
+    background-color:white;
+    text-align: center;
+    align-content: center;
+    margin:10px;
+    padding:10px;
+    color:black;
+    font-size: 20px;
+  }
+  h3{
+    margin-bottom:20px;
+}
+  .item{
+    border: 4px solid grey;
+    width: 300px;
+    height: 200px;
+  }
+  #item1{
+background-color:rgb(203, 245, 245);
+  }
+  #item2{
+    background-color:rgb(255, 216, 216);
+  }
+  #item3{
+    background-color:rgb(253, 253, 223);
+  }
+  #item4{
+    background-color:rgb(200, 226, 243);
+  }
+  
+  @media screen and ( max-width:700px) {
+    .cards{
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+  /* big discounts styles */
+  .container-text{
+    margin: 20px;
+    padding: 40px;
+    background-color: rgb(233, 233, 249);
+  }
+  .container .card{
+    margin:20px;
+    padding:20px;
+  }
+  .container .card:hover{
+  transform: scale(1.1);
+  background-color:rgb(241, 230, 212);
+  }
+  .container-text a{
+    text-decoration: none;
+    color:black;
+  }
+  .container img{
+    height:140px;
+    width:300px;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    z-index:2;
+  }
+  .discount-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #1e2a78;
+    color: white;
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    z-index:3;
+  }
+  .star-rating {
+    color: #f5b50a;
+    font-size: 25px;
+  }
+  .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .add-icon{
+    font-size: 30px;
+    color:blue;
+    background-color: aliceblue;
+    cursor: pointer;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+  }
+  .add-icon:hover{
+    background-color:aquamarine;
+  }
+@media screen and (max-width:426px){
+.container img{
+  height:100px;
+  width:100px;
+}
+.star-rating{
+  font-size: 15px;
+}
+.container .card{
+  width:250px;
+  text-align: center;
+  align-content: center;
+  align-items: center;
+}
+.carousel-inner img{
+  width:200px !important;
+  height:200px !important;
+}
+  }
+@media screen and (min-width:426px) and (max-width:769px){
+    .container img{
+      height:100px;
+      width:100px;
+    }
+    .carousel-inner img{
+      width:300px  !important;
+      height:300px !important;
+    }
+    .star-rating{
+      font-size: 15px;
+    }
+    .container .card{
+      width:180px;
+      text-align: center;
+      align-content: center;
+      align-items: center;
+    }
+      }
+  .Arrivals-text{
+    margin: 20px;
+    padding: 20px;
+    background-color:rgb(215, 227, 250);
+  }
+  .Best-text{
+    margin:20px;
+    padding:20px;
+    background-color: rgb(231, 248, 242);
+  }
+  footer{
+    background-color: rgb(197, 194, 194);
+    padding:90px 50px;
+
+  }
+  footer i{
+    background-color:rgb(197, 194, 194);
+    font-size:bold;
+  }
+ ul li a{
+  text-decoration: none;
+  color:black;
+  font-weight: 400;
+  position:relative;
+  right:30px;
+ }
+ .top-image img{
+  width:100%;
+  height:300px;
+ }
+ .hero-section{
+  background: url(../images/img2.jpg)center center no-repeat;
+background-size: cover;
+height:300px;
+display:flex;
+align-items: center;
+justify-content: center;
+color:white;
+font-weight: bold;
+position: relative;
+font-size: 50px;
+ }
+ product-label{
+  color:white;
+  padding:10px 20px;
+ }
+ .form-select{
+  margin:20px;
+  border-radius:10px;
+  box-shadow:10px 10px 10px grey;
+  background-color: #0d3b66;
+  color: white;
+  padding: 10px 40px 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  height:50px;
+  width:230px;
+ }
+.form-select::after{
+  content: "▼";
+  transform: translateY(-50%);
+  color:white;
+}
+#head{
+  text-align: center;
+  width:400px;
+  height:50px;
+  border-radius:50px;
+}
+.form-shop{
+  display: flex;
+  flex-direction: row;
+  gap:200px;
+}
+.form-shop .search{
+  margin:40px;
+}
+.search i{
+  background-color: grey;
+}
+@media screen and (max-width:426px){
+  .form-shop{
+    display: flex;
+    flex-direction: column;
+    gap:0px;
+  }
+  .form-shop .search{
+    margin:10px;
+    width:100px;
+  }
+  #head{
+    width:300px;
+  }
+  .search i{
+    margin:20px;
+
+  }
+}
+@media screen and (min-width:426px) and (max-width:769px){
+  .form-shop{
+    display: flex;
+    flex-direction: column;
+    gap:0px;
+  }
+  .form-shop .search{
+    margin:20px;
+    width:100px;
+  }
+  #head{
+    width:500px;
+  }
+  .search i{
+    margin:40px;
+  }
+}
+.container-cart{
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color:beige;
+  margin-top:0;
+}
+.cart-items{
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+  background-color: white;
+  margin:20px;
+  width:1000px;
+  height:200px;
+}
+.cart-items img{
+  width:200px;
+  height:200px;
+}
+.total-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.btn i{
+  position:relative;
+  top:-70px;
+  right:-15px;
+}
+.cart-items p{
+  position:relative;
+  top:90px;
+  font-weight: bold;
+}
+.btn-sm{
+  position:relative;
+  left:675px;
+  top:40px;
+  font-weight: bolder;
+  width:50px;
+  height:40px;
+}
+.cart-summary{
+  position:absolute;
+  top:150px;
+  right:30px;
+  background-color: white;
+  width:400px;
+}
+@media screen and (max-width:426px){
+  .cart-items{
+    width:400px;
+  }
+.cart-items p{
+  width:150px;
+  height:100px;
+}
+.cart-summary{
+  position:relative;
+  top:0px;
+  width:400px;
+  left:20px;
+  height:200px;
+}
+.btn i{
+  position: relative;
+  right:30px;
+  bottom:5px;
+}
+.btn-sm{
+  position: relative;
+  right:400px;
+}
+}
+@media screen and (min-width:426px) and (max-width:769px){
+  .cart-items{
+    width:700px;
+  }
+.cart-items p{
+  width:150px;
+  height:100px;
+}
+.cart-summary{
+  position:relative;
+  top:0px;
+  width:400px;
+  left:20px;
+  height:200px;
+}
+.btn i{
+  position: relative;
+  right:30px;
+  bottom:5px;
+}
+.btn-sm{
+  position: relative;
+  right:1000px;
+}
+}
+.Product{
+  display:flex;
+  flex-direction:row;
+}
+.product-text{
+  margin:40px;
+  padding:20px;
+}
+.star{
+  color:gold;
+}
+.product-rating{
+  display: flex;
+  flex-direction: row;
+}
+.rating{
+  color:black;
+}
+.product-text .price{
+  display: flex;
+  flex-direction: row;
+}
+.category-price{
+  display: flex;
+  gap:30px;
+  margin:20px;
+}
+#quantity{
+  color:black;
+  border:2px solid black;
+  border-radius:20px;
+  background-color:darkkhaki;
+  text-align: center;
+}
+.button-product{
+  background-color:rgb(32, 32, 140);
+  border-radius: 10px;
+  color:white;
+  height:45px;
+  text-align:center;
+}
+.description{
+  display: flex;
+  margin:40px;
+}
+.desc-p{
+  margin:40px;
+}
+@media  screen and (max-width:426px) {
+  .Product{
+    display: flex;
+    flex-direction: column;
+  }
+  .Product img{
+    width:300px;
+    height: 200px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+  }
+}
+@media  screen and (min-width:426px) and (max-width:769px){
+  .Product{
+    display: flex;
+    flex-direction: column;
+  }
+  .Product img{
+    width:450px;
+    height: 300px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+  }
+}
